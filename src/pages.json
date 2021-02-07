@@ -1,16 +1,78 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "择良"
+			}
+		},
+		{
+			"path": "pages/query/index",
+			"style": {
+				"navigationBarTitleText": "查询"
+			}
+		},
+		{
+			"path": "pages/publish/index",
+			"style": {
+				"navigationBarTitleText": "发布"
+			}
+		},
+		{
+			"path": "pages/message/index",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "我的"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTitleText": "择良",
+		"navigationBarBackgroundColor": "#F6F7F8",
+		"backgroundColor": "#F6F7F8"
+	},
+	"tabBar": {
+		"color": "#cdcdcd",
+		"selectedColor": "#409EFF",
+		"borderStyle": "black",
+		"backgroundColor": "#fefefe",
+		"list": [
+		  {
+			"pagePath": "pages/index/index",
+			"text": "首页",
+			"iconPath": "./static/icons/index.png",
+			"selectedIconPath": "./static/icons/index_actived.png"
+		  },
+		  {
+			"pagePath": "pages/query/index",
+			"text": "查询",
+			"iconPath": "./static/icons/query.png",
+			"selectedIconPath": "./static/icons/query_actived.png"
+		  },
+		  {
+			"pagePath": "pages/publish/index",
+			"text": "发布",
+			"iconPath": "./static/icons/publish.png", 
+			"selectedIconPath": "./static/icons/publish_actived.png"
+		  },
+		  {
+			"pagePath": "pages/message/index",
+			"text": "消息",
+			"iconPath": "./static/icons/message.png",
+			"selectedIconPath": "./static/icons/message_actived.png"
+		  },
+		  {
+			"pagePath": "pages/user/index",
+			"text": "我的",
+			"iconPath": "./static/icons/user.png",
+			"selectedIconPath": "./static/icons/user_actived.png"
+		  }
+		]
 	}
 }
